@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Textarea from 'react-textarea-autosize';
 
 const styles = {
@@ -32,8 +33,8 @@ class TextType extends React.Component {
 }
 
 TextType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 TextType.serialize = function (value) {

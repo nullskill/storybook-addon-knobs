@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Textarea from 'react-textarea-autosize';
 
 const styles = {
@@ -15,7 +16,7 @@ const styles = {
   color: '#555',
 };
 
-class ArrayType extends React.Component {
+class ArrayType extends Component {
   render() {
     const { knob, onChange } = this.props;
     return (
@@ -31,8 +32,8 @@ class ArrayType extends React.Component {
 }
 
 ArrayType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 ArrayType.serialize = function (value) {

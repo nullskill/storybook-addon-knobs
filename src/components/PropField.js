@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TypeMap from './types';
 
 const InvalidType = () => (<span>Invalid Type</span>);
@@ -62,6 +63,6 @@ export default class PropField extends React.Component {
 }
 
 PropField.propTypes = {
-  onChange: React.PropTypes.func.isRequired,
-  knob: React.PropTypes.object,
+  onChange: PropTypes.func.isRequired,
+  knob: PropTypes.object,
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PropField from './PropField';
 
@@ -50,6 +51,6 @@ export default class propForm extends React.Component {
 propForm.displayName = 'propForm';
 
 propForm.propTypes = {
-  knobs: React.PropTypes.array.isRequired,
-  onFieldChange: React.PropTypes.func.isRequired,
+  knobs: PropTypes.array.isRequired,
+  onFieldChange: PropTypes.func.isRequired,
 };

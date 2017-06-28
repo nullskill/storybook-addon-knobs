@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { SketchPicker } from 'react-color';
 
 const styles = {
@@ -80,8 +81,8 @@ class ColorType extends React.Component {
 }
 
 ColorType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 ColorType.serialize = function (value) {

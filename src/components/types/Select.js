@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const styles = {
   display: 'table-cell',
@@ -51,8 +52,8 @@ class SelectType extends React.Component {
 }
 
 SelectType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 SelectType.serialize = function (value) {

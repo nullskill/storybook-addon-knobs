@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const styles = {
   display: 'table-cell',
@@ -60,8 +61,8 @@ class NumberType extends React.Component {
 }
 
 NumberType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 NumberType.serialize = function (value) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Datetime from 'react-datetime';
 import insertCss from 'insert-css';
 import style from './styles';
@@ -37,8 +38,8 @@ class DateType extends React.Component {
 }
 
 DateType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 DateType.serialize = function (value) {

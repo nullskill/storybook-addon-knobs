@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Textarea from 'react-textarea-autosize';
 import deepEqual from 'deep-equal';
 
@@ -78,8 +79,8 @@ class ObjectType extends React.Component {
 }
 
 ObjectType.propTypes = {
-  knob: React.PropTypes.object,
-  onChange: React.PropTypes.func,
+  knob: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 ObjectType.serialize = function (object) {
