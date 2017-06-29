@@ -12,7 +12,7 @@ require('./ver');
 //   './src --out-dir ./dist',
 // ].join(' ');
 const args = [
-  '--ignore tests,__tests__,story.jsx,story.js',
+  '--ignore tests,__tests__',
   '--plugins "transform-runtime"',
   './src --out-dir ./dist',
 ].join(' ');
