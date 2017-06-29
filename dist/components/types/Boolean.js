@@ -45,8 +45,8 @@ var styles = {
   color: '#555'
 };
 
-var BooleanType = function (_Component) {
-  (0, _inherits3.default)(BooleanType, _Component);
+var BooleanType = function (_React$Component) {
+  (0, _inherits3.default)(BooleanType, _React$Component);
 
   function BooleanType() {
     (0, _classCallCheck3.default)(this, BooleanType);
@@ -76,7 +76,7 @@ var BooleanType = function (_Component) {
     }
   }]);
   return BooleanType;
-}(Component);
+}(_react2.default.Component);
 
 BooleanType.propTypes = {
   knob: _propTypes2.default.object,
