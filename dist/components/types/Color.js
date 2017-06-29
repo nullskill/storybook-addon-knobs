@@ -28,6 +28,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _reactColor = require('react-color');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -137,8 +141,8 @@ var ColorType = function (_React$Component) {
 }(_react2.default.Component);
 
 ColorType.propTypes = {
-  knob: _react2.default.PropTypes.object,
-  onChange: _react2.default.PropTypes.func
+  knob: _propTypes2.default.object,
+  onChange: _propTypes2.default.func
 };
 
 ColorType.serialize = function (value) {

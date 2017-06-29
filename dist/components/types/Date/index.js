@@ -28,6 +28,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _reactDatetime = require('react-datetime');
 
 var _reactDatetime2 = _interopRequireDefault(_reactDatetime);
@@ -80,8 +84,8 @@ var DateType = function (_React$Component) {
 }(_react2.default.Component);
 
 DateType.propTypes = {
-  knob: _react2.default.PropTypes.object,
-  onChange: _react2.default.PropTypes.func
+  knob: _propTypes2.default.object,
+  onChange: _propTypes2.default.func
 };
 
 DateType.serialize = function (value) {

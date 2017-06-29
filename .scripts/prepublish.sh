@@ -13,4 +13,4 @@ rm -rf ./dist
 echo ""
 echo "=> Transpiling completed."
 
-. .scripts/user/prepublish.sh
+./user/prepublish.sh

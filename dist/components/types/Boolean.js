@@ -28,6 +28,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var styles = {
@@ -41,8 +45,8 @@ var styles = {
   color: '#555'
 };
 
-var BooleanType = function (_React$Component) {
-  (0, _inherits3.default)(BooleanType, _React$Component);
+var BooleanType = function (_Component) {
+  (0, _inherits3.default)(BooleanType, _Component);
 
   function BooleanType() {
     (0, _classCallCheck3.default)(this, BooleanType);
@@ -72,11 +76,11 @@ var BooleanType = function (_React$Component) {
     }
   }]);
   return BooleanType;
-}(_react2.default.Component);
+}(Component);
 
 BooleanType.propTypes = {
-  knob: _react2.default.PropTypes.object,
-  onChange: _react2.default.PropTypes.func
+  knob: _propTypes2.default.object,
+  onChange: _propTypes2.default.func
 };
 
 BooleanType.serialize = function (value) {

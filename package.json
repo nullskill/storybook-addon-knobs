@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "start": "./example/prepublish.sh",
-    "prepublish": ". ./.scripts/prepublish.sh",
+    "prepublish": "node .scripts/prepublish.js",
     "lint": "eslint src",
     "lintfix": "eslint src --fix",
     "testonly": "mocha --require .scripts/mocha_runner src/**/tests/**/*.js",
@@ -44,18 +44,19 @@
     "mocha": "^3.1.0",
     "prop-types": "^15.5.10",
     "raw-loader": "^0.5.1",
-    "react": "^15.3.2",
+    "react": "^15.6.1",
     "react-addons-test-utils": "^15.0.0",
-    "react-dom": "^15.3.2",
+    "react-dom": "^15.6.1",
+    "shelljs": "^0.7.4",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.1",
-    "typescript": "^2.0.6",
+    "typescript": "^2.4.1",
     "typescript-definition-tester": "^0.0.5"
   },
   "peerDependencies": {
     "@kadira/storybook-addons": "^1.3.0",
-    "react": "^0.14.7 || ^15.0.0",
-    "react-dom": "^0.14.7 || ^15.0.0"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "dependencies": {
     "babel-runtime": "^6.5.0",

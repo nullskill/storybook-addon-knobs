@@ -28,6 +28,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _PropField = require('./PropField');
 
 var _PropField2 = _interopRequireDefault(_PropField);
@@ -95,6 +99,6 @@ exports.default = propForm;
 propForm.displayName = 'propForm';
 
 propForm.propTypes = {
-  knobs: _react2.default.PropTypes.array.isRequired,
-  onFieldChange: _react2.default.PropTypes.func.isRequired
+  knobs: _propTypes2.default.array.isRequired,
+  onFieldChange: _propTypes2.default.func.isRequired
 };

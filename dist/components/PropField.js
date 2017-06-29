@@ -32,6 +32,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _types = require('./types');
 
 var _types2 = _interopRequireDefault(_types);
@@ -61,7 +65,6 @@ var stylesheet = {
     width: 80,
     fontSize: 10,
     color: 'rgb(68, 68, 68)',
-    textTransform: 'uppercase',
     fontWeight: 600
   }
 };
@@ -123,6 +126,6 @@ exports.default = PropField;
 
 
 PropField.propTypes = {
-  onChange: _react2.default.PropTypes.func.isRequired,
-  knob: _react2.default.PropTypes.object
+  onChange: _propTypes2.default.func.isRequired,
+  knob: _propTypes2.default.object
 };

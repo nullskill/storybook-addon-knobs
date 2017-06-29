@@ -36,6 +36,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _PropForm = require('./PropForm');
 
 var _PropForm2 = _interopRequireDefault(_PropForm);
@@ -201,7 +205,7 @@ exports.default = Panel;
 
 
 Panel.propTypes = {
-  channel: _react2.default.PropTypes.object,
-  onReset: _react2.default.PropTypes.object,
-  api: _react2.default.PropTypes.object
+  channel: _propTypes2.default.object,
+  onReset: _propTypes2.default.object,
+  api: _propTypes2.default.object
 };

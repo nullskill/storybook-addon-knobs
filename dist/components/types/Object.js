@@ -36,6 +36,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _reactTextareaAutosize = require('react-textarea-autosize');
 
 var _reactTextareaAutosize2 = _interopRequireDefault(_reactTextareaAutosize);
@@ -147,8 +151,8 @@ var ObjectType = function (_React$Component) {
 }(_react2.default.Component);
 
 ObjectType.propTypes = {
-  knob: _react2.default.PropTypes.object,
-  onChange: _react2.default.PropTypes.func
+  knob: _propTypes2.default.object,
+  onChange: _propTypes2.default.func
 };
 
 ObjectType.serialize = function (object) {
