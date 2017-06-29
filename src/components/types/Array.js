@@ -16,7 +16,7 @@ const styles = {
   color: '#555',
 };
 
-class ArrayType extends Component {
+class ArrayType extends React.Component {
   render() {
     const { knob, onChange } = this.props;
     return (
